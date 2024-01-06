@@ -1,0 +1,3 @@
+C:/Users/KAVAKLI/Desktop/2. ŞUBE 4. GRUP STOK YÖNETİM SİSTEMİ/ANA KOD/cmake-build-debug/CMakeFiles/ana_kod.dir
+C:/Users/KAVAKLI/Desktop/2. ŞUBE 4. GRUP STOK YÖNETİM SİSTEMİ/ANA KOD/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/KAVAKLI/Desktop/2. ŞUBE 4. GRUP STOK YÖNETİM SİSTEMİ/ANA KOD/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+C:/Users/KAVAKLI/Desktop/2. ŞUBE 4. GRUP STOK YÖNETİM SİSTEMİ/FONKSİYONLAR/cmake-build-debug/CMakeFiles/fonkds.dir
+C:/Users/KAVAKLI/Desktop/2. ŞUBE 4. GRUP STOK YÖNETİM SİSTEMİ/FONKSİYONLAR/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/KAVAKLI/Desktop/2. ŞUBE 4. GRUP STOK YÖNETİM SİSTEMİ/FONKSİYONLAR/cmake-build-debug/CMakeFiles/rebuild_cache.dir
