@@ -1,5 +1,4 @@
 #include "C:\Users\KAVAKLI\Desktop\2. ŞUBE 4. GRUP STOK YÖNETİM SİSTEMİ\HEADER\main.h"
-// Yunus Kavaklı
 void urun_ekle(struct bilgiler stoklar[STOK_limiti], int *urun_sirasi)
 {
     printf("%d. ürün ekleniyor...\n", *urun_sirasi + 1); // stoktaki ürünlere ürün ekleyeceğimiz için 1 ekleyerek eklenecek ürün sırasını yazıyoruz
@@ -13,7 +12,6 @@ void urun_ekle(struct bilgiler stoklar[STOK_limiti], int *urun_sirasi)
     stoklar->sira_no[*urun_sirasi] = *urun_sirasi;
     (*urun_sirasi)++;
 }
-// Cem Civelek
 void urun_guncelle(struct bilgiler stoklar[STOK_limiti])
 {
     int silinecek_urun_no;
@@ -35,7 +33,6 @@ void urun_guncelle(struct bilgiler stoklar[STOK_limiti])
         printf("Ürün bulunamadı");
 
 }
-// Cem civelek
 void stok_goruntule(struct bilgiler stoklar[STOK_limiti], int urun_sirasi)
 {
     printf("Stok görüntüleniyor...\n");
@@ -46,7 +43,6 @@ void stok_goruntule(struct bilgiler stoklar[STOK_limiti], int urun_sirasi)
     }
     printf("Stok başarıyla görüntülendi.\n");
 }
-// Abdulgaffar Gülice
 void stok_sil(struct bilgiler stoklar[STOK_limiti], int *urun_sirasi){
     int silinecek_urun;
     printf("silinecek ürün sirasini girin");
