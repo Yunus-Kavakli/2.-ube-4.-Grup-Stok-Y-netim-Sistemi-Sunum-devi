@@ -54,8 +54,8 @@ void stok_sil(struct bilgiler stoklar[STOK_limiti], int *urun_sirasi){
                 strcpy(stoklar[j].adi,stoklar[j+1].adi);
                 stoklar[j].adedi = stoklar[j+1].adedi;
                 strcpy(stoklar[j].sira_no,stoklar[j+1].sira_no);
-                *urun_sirasi= *urun_sirasi-1;
             }
+            *urun_sirasi= *urun_sirasi-1;
         }
     }
 };
