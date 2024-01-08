@@ -1,4 +1,20 @@
 #include "C:\Users\KAVAKLI\Desktop\2. ŞUBE 4. GRUP STOK YÖNETİM SİSTEMİ\HEADER\main.h"
+void dosyadan_stokal(struct bilgiler stoklar[STOK_limiti], int *urun_sirasi)
+{
+    FILE *dosya = fopen("C:\\Users\\KAVAKLI\\Desktop\\stoklar.txt", "r");
+    if (dosya == NULL)
+    {
+        printf("Dosya okuma işlemi başarısız oldu\n");
+        EXIT_FAILURE;
+    }
+    while (fscanf(dosya, "%d%s%d", &stoklar[*urun_sirasi].seri_no, stoklar[*urun_sirasi].adi, &stoklar[*urun_sirasi].adedi) != EOF)
+    {
+        stoklar->sira_no[*urun_sirasi] = *urun_sirasi;
+        (*urun_sirasi)++;
+    }
+    fclose(dosya);
+    printf("Dosyadan stoklar alındı\n");
+}
 void urun_ekle(struct bilgiler stoklar[STOK_limiti], int *urun_sirasi)
 {
     printf("%d. ürün ekleniyor...\n", *urun_sirasi + 1); // stoktaki ürünlere ürün ekleyeceğimiz için 1 ekleyerek eklenecek ürün sırasını yazıyoruz
@@ -58,7 +74,7 @@ void stok_sil(struct bilgiler stoklar[STOK_limiti], int *urun_sirasi){
             *urun_sirasi= *urun_sirasi-1;
         }
     }
-};
+}
 
 void dosyaya_kaydet(struct bilgiler stoklar[STOK_limiti], int urun_sirasi)
 {
@@ -77,19 +93,4 @@ void dosyaya_kaydet(struct bilgiler stoklar[STOK_limiti], int urun_sirasi)
     printf("Programdan çıkılıyor...");
 }
 
-void dosyadan_stokal(struct bilgiler stoklar[STOK_limiti], int *urun_sirasi)
-{
-    FILE *dosya = fopen("C:\\Users\\KAVAKLI\\Desktop\\stoklar.txt", "r");
-    if (dosya == NULL)
-    {
-        printf("Dosya okuma işlemi başarısız oldu\n");
-        EXIT_FAILURE;
-    }
-    while (fscanf(dosya, "%d%s%d", &stoklar[*urun_sirasi].seri_no, stoklar[*urun_sirasi].adi, &stoklar[*urun_sirasi].adedi) != EOF)
-    {
-        stoklar->sira_no[*urun_sirasi] = *urun_sirasi;
-        (*urun_sirasi)++;
-    }
-    fclose(dosya);
-    printf("Dosyadan stoklar alındı\n");
-}
+
