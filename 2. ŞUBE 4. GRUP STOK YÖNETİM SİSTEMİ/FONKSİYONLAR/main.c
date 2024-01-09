@@ -30,19 +30,19 @@ void urun_ekle(struct bilgiler stoklar[STOK_limiti], int *urun_sirasi)
 }
 void urun_guncelle(struct bilgiler stoklar[STOK_limiti])
 {
-    int silinecek_urun_no;
+    int guncellenecek_urun_no;
     printf("Bilgilerini güncellemek istediğiniz ürünün sıra numarasını giriniz: ");
-    scanf("%d", &silinecek_urun_no);
-    silinecek_urun_no = silinecek_urun_no - 1; // ekranda 1. olarak görünen ürün aslında 0. ürün olarak kaydedildiği için -1 yapıyoruz.
-    if (silinecek_urun_no == stoklar->sira_no[silinecek_urun_no])
+    scanf("%d", &guncellenecek_urun_no);
+    guncellenecek_urun_no = guncellenecek_urun_no - 1; // ekranda 1. olarak görünen ürün aslında 0. ürün olarak kaydedildiği için -1 yapıyoruz.
+    if (guncellenecek_urun_no == stoklar->sira_no[guncellenecek_urun_no])
     {
         printf("Ürün bulundu\n");
         printf("Yeni ürün seri numarasını giriniz: ");
-        scanf("%d", &stoklar[silinecek_urun_no].seri_no);
+        scanf("%d", &stoklar[guncellenecek_urun_no].seri_no);
         printf("Yeni ürün adını giriniz: ");
-        scanf("%s", stoklar[silinecek_urun_no].adi);
+        scanf("%s", stoklar[guncellenecek_urun_no].adi);
         printf("Yeni ürünün stok miktarını giriniz: ");
-        scanf("%d", &stoklar[silinecek_urun_no].adedi);
+        scanf("%d", &stoklar[guncellenecek_urun_no].adedi);
         printf("Ürün başarıyla güncellendi.\n");
     }
     else
